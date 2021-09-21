@@ -1,0 +1,20 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(16,1fr);
+  grid-template-rows: repeat(16,1fr);
+  width:50vw;
+  height:50vh;
+  margin: auto;
+}
+
+.pixel{
+  border: solid black 1px;
+  width:calc(50vw/16);
+  height:calc(50vh/16);
+  margin:0;
+  padding: 0;
+}
+
+.colored{
+  background-color: black;
+}
