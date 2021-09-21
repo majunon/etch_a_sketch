@@ -11,3 +11,19 @@ const pixels = document.querySelectorAll('.pixel');
 pixels.forEach(pixel => pixel.addEventListener('mouseover',function(e){
   this.classList.add("colored");
 }));
+
+const buttonClear = document.querySelector('#clear');
+
+buttonClear.addEventListener('click',function(e){
+  pixels.forEach(function(ee){
+    if(ee.classList.contains("colored")){
+      ee.classList.remove("colored");
+    }
+  })
+});
+
+const buttonSize = document.querySelector('#size');
+
+buttonSize.addEventListener('click',function(e){
+  let gridSize = prompt("Grid size ?");
+})
