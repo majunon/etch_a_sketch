@@ -38,6 +38,7 @@ const buttonSize = document.querySelector('#size');
 
 buttonSize.addEventListener('click',function(e){
   gridSize = prompt("Grid size ?");
+  if(gridSize>100){gridSize=100;}
 
-  pixels=createGrid(gridSize);
+  createGrid(gridSize);
 })
